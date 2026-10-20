@@ -6,6 +6,7 @@ requires-python = ">=3.13"
 members = [
     "day6",
     "day7",
+    "day8",
     "week2",
 ]
 
@@ -59,6 +60,21 @@ requires-dist = [
 name = "day7"
 version = "0.1.0"
 source = { editable = "day7" }
+dependencies = [
+    { name = "groq" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "groq", specifier = ">=1.7.0" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
+]
+
+[[package]]
+name = "day8"
+version = "0.1.0"
+source = { editable = "day8" }
 dependencies = [
     { name = "groq" },
     { name = "python-dotenv" },
