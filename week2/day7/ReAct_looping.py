@@ -143,6 +143,5 @@ def run_agent(question):
 
             sleep(5)
 
-prompt="""
-i want to buy an iphone17 and i have 7000 rupees in my wallet. how much money will be left if i buy it?"""  
+prompt=input("Enter your desired smartphone and the money you have: ") 
 run_agent(prompt)
